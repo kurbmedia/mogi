@@ -1,0 +1,13 @@
+<h1>Repositories</h1>
+<table border="0">
+	<tr>
+		<th>Name</th>
+		<th>Path</th>
+	</tr>
+	<% collection.each do |repo| %>
+	<tr>
+		<td><%= repo.name %></td>
+		<td><%= repo.path %></td>
+	</tr>
+	<% end %>
+</table>

@@ -1,0 +1,7 @@
+development:
+  repository_path: ":rails_root/repos"
+  git_path: "/usr/local/bin/git"
+
+production:
+  repository_path: ":rails_root/repos"
+  git_path: "/usr/bin/git"

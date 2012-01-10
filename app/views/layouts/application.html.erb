@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mogi</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8" />
+	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+	<title><%= page_title %></title>	
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<%= csrf_meta_tags %>
+	<%= javascript_include_tag 'application' %>
+	<%= stylesheet_link_tag "screen" %>
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="wrapper">
+		<header id="heading">
+			
+		</header>
+		<div id="main" role="main">
+			<%= yield %>
+		</div>
+		<footer id="footer">
+			
+		</footer>
+	</div>
 </body>
 </html>
+<html>

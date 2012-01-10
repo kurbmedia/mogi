@@ -1,31 +1,29 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.1.3'
+gem 'facades', '0.0.7'
+gem 'mongo', '1.5.2'
+gem 'bson', '1.5.2'
+gem 'bson_ext', '1.5.2'
+gem 'mongoid', '2.4.0'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'devise', '1.5.3'
+gem 'inherited_resources', '1.3.0'
+gem 'grit', '2.4.1'
 
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'sass-rails',   '~> 3.1.5'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+group :production do
+  gem 'unicorn', '4.1.1'
+end
 
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
+group :development, :test do
+  gem 'rspec', '2.8.0'
+  gem 'rspec-rails', '2.8.1'
+end
