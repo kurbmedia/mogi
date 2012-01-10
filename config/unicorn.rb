@@ -3,8 +3,8 @@ working_directory "/git/app"
 preload_app true
 
 timeout 30
-listen "/git/app/tmp/sockets/unicorn.sock", :backlog => 64
-pid "/git/app/tmp/unicorn.pid"
+listen "/git/mogi/tmp/sockets/unicorn.sock", :backlog => 64
+pid "/git/mogi/tmp/unicorn.pid"
 
-stderr_path "/git/app/log/unicorn.stderr.log"
-stdout_path "/git/app/log/unicorn.stdout.log"
+stderr_path "/git/mogi/log/unicorn.stderr.log"
+stdout_path "/git/mogi/log/unicorn.stdout.log"
